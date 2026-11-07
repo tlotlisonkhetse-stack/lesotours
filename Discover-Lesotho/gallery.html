@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Explore the beauty, landscapes, adventures and cultural heritage of Lesotho through our photo gallery."
+  >
+
+  <title>Gallery | Discover Lesotho</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Website JavaScript -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+  
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        Discover Lesotho
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavigation"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse"
+        id="mainNavigation"
+      >
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html">
+              Destinations
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="gallery.html"
+              aria-current="page"
+            >
+              Gallery
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              data-theme-toggle
+              aria-label="Switch to dark mode"
+            >
+              Dark mode
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <main id="main-content">
+
+    
+    <section class="page-hero">
+      <div class="container text-center">
+
+        <p class="eyebrow">
+          DISCOVER THE MOUNTAIN KINGDOM
+        </p>
+
+        <h1>Gallery of Lesotho</h1>
+
+        <p class="lead">
+          From breathtaking mountain scenery to unforgettable
+          adventures and Basotho traditions, discover the beauty
+          of Lesotho through our photographs.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section class="gallery-section py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2>Explore Our Photo Collection</h2>
+
+          <p>
+            Select any photograph to view it in a larger size.
+          </p>
+        </div>
+
+        
+        <div class="gallery-grid">
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View Afriski photograph"
+            >
+              <img
+                src="images/afriski.jpeg"
+                alt="Snow and mountain activities at Afriski"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Afriski</h3>
+              <p>Mountain adventures</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View Katse Dam photograph"
+            >
+              <img
+                src="images/katse.jpeg"
+                alt="Katse Dam and surrounding mountains"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Katse Dam</h3>
+              <p>Beautiful water landscapes</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View Leifo photograph"
+            >
+              <img
+                src="images/leifo.jpeg"
+                alt="Leifo landscape and traditional stone structure"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Leifo</h3>
+              <p>Local places and heritage</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View Maletsunyane Falls photograph"
+            >
+              <img
+                src="images/maletsunyane.jpeg"
+                alt="Maletsunyane Falls surrounded by green mountains"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Maletsunyane Falls</h3>
+              <p>Nature at its finest</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View men's attire photograph"
+            >
+              <img
+                src="images/men_attire.jpeg"
+                alt="Traditional and cultural men's attire"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Men's Attire</h3>
+              <p>Culture and identity</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View Mosotho photograph"
+            >
+              <img
+                src="images/mosotho.jpeg"
+                alt="A glimpse of Basotho life and heritage"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Mosotho</h3>
+              <p>People and traditions</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View Sehlabathebe photograph"
+            >
+              <img
+                src="images/sehlabathebe.jpeg"
+                alt="The natural landscape of Sehlabathebe"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Sehlabathebe</h3>
+              <p>Peaceful mountain scenery</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View women's attire photograph"
+            >
+              <img
+                src="images/women_attire.jpeg"
+                alt="Women's attire and cultural expression"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Women's Attire</h3>
+              <p>Style and tradition</p>
+            </figcaption>
+          </figure>
+
+        
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View another Afriski photograph"
+            >
+              <img
+                src="images/afriski.jpeg"
+                alt="Afriski mountain resort"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Mountain Adventures</h3>
+              <p>Experience the highlands</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View another Katse Dam photograph"
+            >
+              <img
+                src="images/katse.jpeg"
+                alt="Katse Dam mountain scenery"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Mountain Waters</h3>
+              <p>Discover Lesotho's landscapes</p>
+            </figcaption>
+          </figure>
+
+          
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View another Maletsunyane Falls photograph"
+            >
+              <img
+                src="images/maletsunyane.jpeg"
+                alt="Waterfall and mountain scenery"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Natural Wonders</h3>
+              <p>Explore the beauty of nature</p>
+            </figcaption>
+          </figure>
+
+          <!-- Repeated photo: Mosotho -->
+          <figure class="gallery-item">
+            <button
+              class="gallery-image-button"
+              type="button"
+              data-gallery-image
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              aria-label="View another Basotho heritage photograph"
+            >
+              <img
+                src="images/mosotho.jpeg"
+                alt="Basotho people and heritage"
+                loading="lazy"
+              >
+            </button>
+
+            <figcaption>
+              <h3>Basotho Heritage</h3>
+              <p>A proud cultural identity</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery call to action -->
+    <section class="cta-section py-5">
+      <div class="container text-center">
+
+        <h2>Ready to Discover Lesotho?</h2>
+
+        <p>
+          Turn these inspiring views into your next adventure.
+        </p>
+
+        <a href="destinations.html" class="btn btn-primary">
+          Explore Destinations
+        </a>
+
+        <a href="contact.html" class="btn btn-outline-secondary">
+          Contact Us
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Image preview modal -->
+  <div
+    class="modal fade"
+    id="galleryModal"
+    tabindex="-1"
+    aria-labelledby="galleryModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="galleryModalLabel">
+            Discover Lesotho
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close image preview"
+          ></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <img
+            id="gallery-modal-image"
+            src="images/afriski.jpeg"
+            alt="Selected photograph from the Discover Lesotho gallery"
+            class="img-fluid"
+          >
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+
+      <p class="mb-2">
+        <strong>Discover Lesotho</strong>
+      </p>
+
+      <p class="mb-2">
+        Explore the beauty, culture and adventures of the Mountain Kingdom.
+      </p>
+
+      <p class="mb-0">
+        &copy; <span data-year></span> Discover Lesotho.
+        All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+</body>
+</html>

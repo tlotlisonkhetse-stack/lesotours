@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Explore Lesotho's destinations, mountain scenery, pony trekking and Basotho culture.">
+
+  <title>Destinations | Discover Lesotho</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Discover Lesotho</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="destinations.html" aria-current="page">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button class="btn btn-outline-secondary" type="button" data-theme-toggle aria-label="Switch to dark mode">Dark mode</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container text-center">
+        <p class="eyebrow">EXPLORE THE MOUNTAIN KINGDOM</p>
+        <h1>Discover Lesotho's Destinations</h1>
+        <p class="lead">Explore remarkable landscapes, outdoor adventures and the rich cultural heritage of the Basotho people.</p>
+      </div>
+    </section>
+
+    <section class="destinations-section py-5" id="destinations">
+      <div class="container">
+
+        <div class="section-heading text-center mb-5">
+          <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+          <h2>Find Your Experience</h2>
+          <p class="section-description mx-auto">
+            From spectacular waterfalls and peaceful parks to pony trekking
+            and Basotho traditions, find an experience to remember.
+          </p>
+        </div>
+
+        <div class="search-container mx-auto mb-4">
+          <label for="destination-search" class="form-label">Search destinations and experiences</label>
+          <input type="search" id="destination-search" class="form-control" placeholder="Try Katse, culture or pony trekking..." aria-label="Search destinations and experiences">
+        </div>
+
+        <div class="filter-buttons d-flex flex-wrap justify-content-center gap-2 mb-4" aria-label="Filter destinations">
+          <button type="button" class="active" data-filter="all" aria-pressed="true">All Destinations</button>
+          <button type="button" data-filter="nature" aria-pressed="false">Nature</button>
+          <button type="button" data-filter="adventure" aria-pressed="false">Adventure</button>
+          <button type="button" data-filter="culture" aria-pressed="false">Culture</button>
+        </div>
+
+        <p id="results-count" class="text-center mb-4" aria-live="polite">Showing 6 destinations</p>
+
+        <div class="row g-4" id="destination-grid">
+
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-category="nature">
+            <article class="destination-card h-100">
+              <img src="images/katse.jpeg" alt="Katse Dam and surrounding mountains" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow">SCENIC ESCAPE</p>
+                <h3 class="card-title">Katse Dam</h3>
+                <p class="card-text">Admire the impressive dam and the beautiful mountain landscape surrounding it.</p>
+                <a href="contact.html" class="btn btn-outline-primary mt-auto">Plan Your Visit</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-category="nature">
+            <article class="destination-card h-100">
+              <img src="images/maletsunyane.jpeg" alt="Maletsunyane Falls and its mountain gorge" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow">NATURAL WONDER</p>
+                <h3 class="card-title">Maletsunyane Falls</h3>
+                <p class="card-text">Discover the spectacular waterfall and the beautiful highland scenery around Semonkong.</p>
+                <a href="contact.html" class="btn btn-outline-primary mt-auto">Plan Your Visit</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-category="nature">
+            <article class="destination-card h-100">
+              <img src="images/sehlabathebe.jpeg" alt="Sehlabathebe's rugged highland scenery" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow">WILDERNESS RETREAT</p>
+                <h3 class="card-title">Sehlabathebe</h3>
+                <p class="card-text">Explore open grasslands, unusual rock formations and the peaceful natural surroundings.</p>
+                <a href="contact.html" class="btn btn-outline-primary mt-auto">Plan Your Visit</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-category="adventure">
+            <article class="destination-card h-100">
+              <img src="images/pony_trekking.jpeg" alt="Pony trekking through the Lesotho highlands" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow">HIGHLAND ADVENTURE</p>
+                <h3 class="card-title">Pony Trekking</h3>
+                <p class="card-text">Travel along mountain trails and experience traditional Basotho pony trekking.</p>
+                <a href="contact.html" class="btn btn-outline-primary mt-auto">Plan Your Visit</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-category="culture">
+            <article class="destination-card h-100">
+              <img src="images/culture.jpeg" alt="Basotho culture and traditions" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow">CULTURE &amp; HERITAGE</p>
+                <h3 class="card-title">Basotho Culture</h3>
+                <p class="card-text">Discover traditional clothing, local hospitality, crafts and Basotho heritage.</p>
+                <a href="contact.html" class="btn btn-outline-primary mt-auto">Plan Your Visit</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-category="adventure">
+            <article class="destination-card h-100">
+              <img src="images/highland_passes.jpeg" alt="Winding mountain passes in Lesotho" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow">SCENIC JOURNEY</p>
+                <h3 class="card-title">Highland Passes</h3>
+                <p class="card-text">Discover winding mountain roads, dramatic viewpoints and unforgettable highland journeys.</p>
+                <a href="contact.html" class="btn btn-outline-primary mt-auto">Plan Your Visit</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <div id="no-results" class="text-center py-5 mt-4" hidden>
+          <h3>No destinations found</h3>
+          <p>Try another search term or choose a different category.</p>
+          <button type="button" class="btn btn-primary" data-reset-destinations>Show All Destinations</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section py-5">
+      <div class="container text-center">
+        <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+        <h2>Ready to Discover Lesotho?</h2>
+        <p>Choose your experience and start planning your visit to the Mountain Kingdom.</p>
+        <a href="contact.html" class="btn btn-primary">Plan Your Visit</a>
+        <a href="gallery.html" class="btn btn-outline-secondary">View Gallery</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+      <strong>Discover Lesotho</strong>
+      <p class="mt-3">Celebrating the landscapes, culture and adventures of the Mountain Kingdom.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="mt-3 mb-0">&copy; <span data-year></span> Discover Lesotho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

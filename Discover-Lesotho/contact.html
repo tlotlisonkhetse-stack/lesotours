@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
+        name="description"
+        content="Start planning a Lesotho trip or send Discover Lesotho a message."
+    >
+
+    <title>Plan a Visit | Discover Lesotho</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
+
+    
+    <nav
+        class="navbar navbar-expand-lg site-nav sticky-top"
+        aria-label="Main navigation"
+    >
+        <div class="container">
+
+            <a class="navbar-brand brand-mark" href="index.html">
+                <span class="brand-symbol">◆</span>
+                discover<span>lesotho</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="contact.html"
+                        >
+                            Plan a Visit
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <button
+                            class="theme-toggle"
+                            type="button"
+                            data-theme-toggle
+                            aria-label="Switch colour theme"
+                        >
+                            ◐ <span>Theme</span>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Page Hero -->
+        <section class="page-hero contact-hero">
+            <div class="container">
+                <p class="eyebrow light-eyebrow">
+                    Let's make a plan
+                </p>
+
+                <h1>
+                    Your next story<br>
+                    <em>starts here.</em>
+                </h1>
+
+                <p>
+                    Tell us what you would love to discover.
+                </p>
+            </div>
+        </section>
+
+        
+        <section class="section-space">
+            <div class="container">
+                <div class="row g-5">
+
+                    
+                    <div class="col-lg-5">
+                        <p class="eyebrow">Plan a visit</p>
+
+                        <h2 class="section-title">
+                            A good journey<br>
+                            <em>begins with a hello.</em>
+                        </h2>
+
+                        <p class="section-lead">
+                            Share a few details about the trip you have
+                            in mind. This demonstration website saves
+                            your request in this browser and shows a
+                            confirmation; it does not send bookings to
+                            a real provider.
+                        </p>
+
+                        <div class="contact-detail">
+                            <span class="contact-icon">↗</span>
+
+                            <div>
+                                <strong>Start exploring</strong>
+
+                                <p>
+                                    <a href="destinations.html">
+                                        Browse destinations and experiences
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span class="contact-icon">⌂</span>
+
+                            <div>
+                                <strong>Travel thoughtfully</strong>
+
+                                <p>
+                                    Confirm prices, transport, opening
+                                    times and safety details with
+                                    providers before departure.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="notice-card">
+                            <strong>Planning tip</strong>
+
+                            <p>
+                                Mountain weather can change quickly.
+                                Pack layers and check current conditions
+                                before outdoor activities.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-7">
+                        <div class="form-card">
+
+                            <p class="eyebrow">Trip planner</p>
+
+                            <h2 class="form-title">
+                                Tell us about your trip
+                            </h2>
+
+                            <div
+                                id="booking-alert"
+                                class="alert d-none"
+                                role="status"
+                                aria-live="polite"
+                            ></div>
+
+                            <form id="booking-form" novalidate>
+                                <div class="row g-3">
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="booking-name"
+                                        >
+                                            Full name *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="booking-name"
+                                            name="name"
+                                            type="text"
+                                            autocomplete="name"
+                                            minlength="2"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Please enter your name
+                                            (at least 2 characters).
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="booking-email"
+                                        >
+                                            Email address *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="booking-email"
+                                            name="email"
+                                            type="email"
+                                            autocomplete="email"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Enter a valid email address.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="booking-phone"
+                                        >
+                                            Phone number *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="booking-phone"
+                                            name="phone"
+                                            type="tel"
+                                            autocomplete="tel"
+                                            inputmode="tel"
+                                            pattern="[0-9+() -]{7,20}"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Enter a phone number with
+                                            at least 7 digits.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="booking-date"
+                                        >
+                                            Preferred date *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="booking-date"
+                                            name="date"
+                                            type="date"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Choose today or a future date.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="booking-place"
+                                        >
+                                            Place or experience *
+                                        </label>
+
+                                        <select
+                                            class="form-select"
+                                            id="booking-place"
+                                            name="place"
+                                            required
+                                        >
+                                            <option value="">
+                                                Choose an experience
+                                            </option>
+
+                                            <option>
+                                                Maletsunyane Falls
+                                            </option>
+
+                                            <option>
+                                                Katse Dam
+                                            </option>
+
+                                            <option>
+                                                Highland Passes
+                                            </option>
+
+                                            <option>
+                                                Sehlabathebe
+                                            </option>
+
+                                            <option>
+                                                Maseru culture
+                                            </option>
+
+                                            <option>
+                                                Pony trekking
+                                            </option>
+
+                                            <option>
+                                                Not sure yet
+                                            </option>
+                                        </select>
+
+                                        <div class="invalid-feedback">
+                                            Please select an experience.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="booking-guests"
+                                        >
+                                            Number of people *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="booking-guests"
+                                            name="guests"
+                                            type="number"
+                                            min="1"
+                                            max="30"
+                                            value="2"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Choose between 1 and 30 people.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label
+                                            class="form-label"
+                                            for="booking-style"
+                                        >
+                                            Travel style
+                                        </label>
+
+                                        <select
+                                            class="form-select"
+                                            id="booking-style"
+                                            name="style"
+                                        >
+                                            <option value="standard">
+                                                Easy-going explorer
+                                            </option>
+
+                                            <option value="adventure">
+                                                Outdoor adventure
+                                            </option>
+
+                                            <option value="culture">
+                                                Culture and heritage
+                                            </option>
+
+                                            <option value="family">
+                                                Family-friendly trip
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label
+                                            class="form-label"
+                                            for="booking-notes"
+                                        >
+                                            Anything else we should know?
+                                        </label>
+
+                                        <textarea
+                                            class="form-control"
+                                            id="booking-notes"
+                                            name="notes"
+                                            rows="3"
+                                            maxlength="500"
+                                            placeholder="Interests, questions or special requests"
+                                        ></textarea>
+                                    </div>
+
+                                    <!-- Estimated Cost -->
+                                    <div class="col-12">
+                                        <div class="estimate-box">
+                                            <span>
+                                                Estimated planning guide
+                                            </span>
+
+                                            <strong id="booking-estimate">
+                                                M 0
+                                            </strong>
+
+                                            <small>
+                                                This is a classroom calculator
+                                                estimate only, not a real
+                                                quote or booking price.
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Trip Request -->
+                                    <div class="col-12">
+                                        <button
+                                            class="btn btn-forest w-100"
+                                            type="submit"
+                                        >
+                                            Save trip request
+                                            <span aria-hidden="true">↗</span>
+                                        </button>
+
+                                        <p class="form-footnote">
+                                            * Required fields. Your
+                                            demonstration request is saved
+                                            only in this browser.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section
+            class="contact-form-section section-space"
+            id="contact-form"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-8">
+                        <div class="form-card">
+
+                            <p class="eyebrow">Have a question?</p>
+
+                            <h2 class="form-title">
+                                Send us a message
+                            </h2>
+
+                            <div
+                                id="contact-alert"
+                                class="alert d-none"
+                                role="status"
+                                aria-live="polite"
+                            ></div>
+
+                            <form
+                                id="contact-form-element"
+                                novalidate
+                            >
+                                <div class="row g-3">
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="contact-name"
+                                        >
+                                            Your name *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="contact-name"
+                                            name="name"
+                                            type="text"
+                                            autocomplete="name"
+                                            minlength="2"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Please enter your name.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label"
+                                            for="contact-email"
+                                        >
+                                            Email address *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="contact-email"
+                                            name="email"
+                                            type="email"
+                                            autocomplete="email"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Enter a valid email address.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label
+                                            class="form-label"
+                                            for="contact-subject"
+                                        >
+                                            Subject *
+                                        </label>
+
+                                        <input
+                                            class="form-control"
+                                            id="contact-subject"
+                                            name="subject"
+                                            type="text"
+                                            minlength="3"
+                                            required
+                                        >
+
+                                        <div class="invalid-feedback">
+                                            Please add a short subject.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label
+                                            class="form-label"
+                                            for="contact-message"
+                                        >
+                                            Message *
+                                        </label>
+
+                                        <textarea
+                                            class="form-control"
+                                            id="contact-message"
+                                            name="message"
+                                            rows="4"
+                                            minlength="10"
+                                            maxlength="1000"
+                                            required
+                                        ></textarea>
+
+                                        <div class="invalid-feedback">
+                                            Please write at least
+                                            10 characters.
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Contact Message -->
+                                    <div class="col-12">
+                                        <button
+                                            class="btn btn-forest"
+                                            type="submit"
+                                        >
+                                            Save message
+                                            <span aria-hidden="true">↗</span>
+                                        </button>
+
+                                        <p class="form-footnote">
+                                            This demo stores the message
+                                            in your browser only; it is
+                                            not emailed.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+                    <a
+                        class="navbar-brand brand-mark footer-brand"
+                        href="index.html"
+                    >
+                        <span class="brand-symbol">◆</span>
+                        discover<span>lesotho</span>
+                    </a>
+
+                    <p class="footer-description">
+                        A little inspiration for discovering the mountains,
+                        people and stories of the Kingdom in the Sky.
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h2 class="footer-heading">Explore</h2>
+
+                    <a href="about.html">Our story</a>
+                    <a href="destinations.html">Destinations</a>
+                    <a href="gallery.html">Photo journal</a>
+                </div>
+
+                <div class="col-6 col-lg-4">
+                    <h2 class="footer-heading">Make it yours</h2>
+
+                    <a href="contact.html">Plan a visit</a>
+                    <a href="#contact-form">Contact us</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>
+                    © <span data-year></span> Discover Lesotho
+                </span>
+
+                <span>Find your higher ground.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
